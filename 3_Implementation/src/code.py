@@ -67,7 +67,9 @@ for j in emp_num:
 # Checks if there is an output.xlsx file in the directory
 if(os.path.isfile("output.xlsx")):
 	path = "output.xlsx"
+	# including the output masterfile location into the path variable to store the result
 	exist = pd.read_excel(path)
+	#reading the location of the output file
 	list1 = []
 	for i in range(len(exist)):
 		list1.append(exist.iloc[[0]].values.flatten().tolist())
@@ -75,6 +77,7 @@ if(os.path.isfile("output.xlsx")):
 	res = list1 + result1
 	print(len(res[1]))
 	res1 = pd.DataFrame(res, columns = result.columns)
+	# Storing the values into the res1 from dataframe
 	print(res1.head)
 	# Updating the existing excel sheet
 	res1.to_excel(path,index=False)
