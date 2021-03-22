@@ -8,9 +8,9 @@ It is a Data Set problem that will allow to users to retrive data from data set.
 ## High Level Requirements:
 |*id*  |*Requirements*  | *Description*  |*Status*  |
 | --- | --- | --- | --- |
-|HL1 | Search data from sheet |Search all data from sheets when user gives the City Name to be searched.|IMPLEMENTED|
+|HL1 | Search data from sheet |Search all data from sheets when user gives the Employee Name or number to be searched.|IMPLEMENTED|
 |HL2 | write data into new Sheet  | Write all the data from different sheets in one Master Sheet|IMPLEMENTED |
-|HL3 |Extract data from sheets using given input|Write new required data in the excel file. |IMPLEMENTED |
+|HL3 |Extract data from sheets using given input|Write new required data in the  master excel file. |IMPLEMENTED |
 
  
 
