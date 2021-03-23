@@ -87,3 +87,42 @@ else:
 	result2 = pd.DataFrame(result1, columns=result.columns)
 	# Storing dataframe into an excel sheet
 	result2.to_excel("output.xlsx", index=False)
+	
+	
+	
+#---------------------------------------------------------------------------------------------------------------------#
+#---------------------------------CODE CHECKED IN PEP8----------------------------------------------------------------#
+# import os.path
+# import pandas as pd
+# df = [pd.read_excel("Sheet1.xlsx"), pd.read_excel("Sheet2.xlsx"),
+#       pd.read_excel("Sheet3.xlsx"), pd.read_excel("Sheet4.xlsx"),
+#       pd.read_excel("Sheet5.xlsx")]
+# emp_num = list(map(str, input("Enter Employee No's : ").split(" ")))
+# mega_df = []
+# result1 = []
+# result = 0
+# for j in emp_num:
+#     for i in range(39):
+#         if(str(df[1]["number"][i]) == j):
+#             mega_df = [df[0].iloc[[i]], df[1].iloc[[i]], df[2].iloc[[i]],
+#                        df[3].iloc[[i]], df[4].iloc[[i]]]
+#             result = pd.concat(mega_df, axis=1, join="inner")
+#             result = result.loc[:, ~result.columns.duplicated()]
+#             result = result[result.columns.drop(list(result.filter
+#                             (regex='Unknown')))]
+#             result1.append(result.iloc[[0]].values.flatten().tolist())
+# if(os.path.isfile("output.xlsx")):
+#     path = "output.xlsx"
+#     exist = pd.read_excel(path)
+#     list1 = []
+#     for i in range(len(exist)):
+#         list1.append(exist.iloc[[0]].values.flatten().tolist())
+#     res = list1 + result1
+#     print(len(res[1]))
+#     res1 = pd.DataFrame(res, columns=result.columns)
+#     print(res1.head)
+#     res1.to_excel(path, index=False)
+# else:
+#     result2 = pd.DataFrame(result1, columns=result.columns)
+#     result2.to_excel("output.xlsx", index=False)
+
